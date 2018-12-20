@@ -1,0 +1,44 @@
+<p>
+  bookmark-testing works!
+</p>
+<nav>
+  <ul>
+    <li>
+      <a href="" [routerLink]="['/home']">Home</a>
+    </li>
+  </ul>
+</nav>
+
+<nav>
+  <ul>
+    <li>
+      <a href="Javascript:void(0);" (click)="getThere($event)" fragment="content">Content</a>
+    </li>
+    <li>
+      <a href="Javascript:void(0);" (click)="getThere($event)" fragment="content2">Content 2</a>
+    </li>
+    <li>
+      <a href="Javascript:void(0);" (click)="getThere($event)" fragment="content3">Content 3</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- <div id="myDIV"> -->
+  <div id="content">
+    <div style="position:absolute;top:0;">Some text at the top</div>
+    <div style="position:absolute;bottom:0">Some text at the bottom</div>
+  </div>
+  <div id="content2">
+    <div style="position:absolute;top:0;">Some text at the top</div>
+    <div style="position:absolute;bottom:0">Some text at the bottom</div>
+  </div>
+  <div id="content3">
+    <div style="position:absolute;top:0;">Some text at the top</div>
+    <div style="position:absolute;bottom:0">Some text at the bottom</div>
+  </div>
+<!-- </div> -->
+
+
+
+<!-- <button (click)="getThere($event)" fragment="content" >Scroll to the top of the element</button> -->
+<!-- <button (click)="scrollToBottom()">Scroll to the bottom of the element</button> -->
