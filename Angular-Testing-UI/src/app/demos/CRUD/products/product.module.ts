@@ -14,22 +14,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuardService } from '../services/auth/guard/auth-guard.service';
 
 const routes: Routes = [
-  //  { path: 'demos/demo-home/crud-home/products/product-list/product-list', component: ProductListComponent },
-
   {
       path: 'demos/demo-home/crud-home/products/product-list/product-list',
-      canActivate: [ AuthGuardService ],
-      data: { preload: true },
-      component: ProductListComponent
+      canActivate: [ AuthGuardService ], data: { preload: true }, component: ProductListComponent
   },
-
   { path: 'demos/demo-home/crud-home/products/product-detail/product-detail/:id',
-    canActivate: [ ProductDetailGuard ], component: ProductDetailComponent
+    canActivate: [ AuthGuardService, ProductDetailGuard ], component: ProductDetailComponent
   },
   {
     path: 'demos/demo-home/crud-home/products/product-edit/product-edit/:id/edit',
-    canDeactivate: [ ProductEditGuard ],
-    component: ProductEditComponent
+    canDeactivate: [ AuthGuardService, ProductEditGuard ], component: ProductEditComponent
   }
 ];
 
