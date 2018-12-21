@@ -18,7 +18,15 @@ import { MessageComponent } from './components/messages/message.component';
       }
     ])
   ],
-  declarations: [StarComponent, ConvertToSpacesPipe, MessageComponent],
-  exports: [FormsModule, StarComponent, ConvertToSpacesPipe]
+  declarations: [
+    StarComponent,
+    ConvertToSpacesPipe,
+    MessageComponent
+  ],
+  exports: [
+    FormsModule,
+    StarComponent,
+    ConvertToSpacesPipe
+  ]
 })
 export class SharedModule {}

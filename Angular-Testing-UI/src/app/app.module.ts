@@ -8,6 +8,7 @@ import { UtilitiesModule } from './utilities/utilities.module';
 import { DemosModule } from './demos/demos.module';
 import { UtilitiesTestingModule } from './common/utilities-testing.module';
 import { GeneralTestingModule } from './testing/general-testing.module';
+import { PageNotFoundComponent } from './system/pages/page-not-found.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { GeneralTestingModule } from './testing/general-testing.module';
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   bootstrap: [AppComponent]
 })
