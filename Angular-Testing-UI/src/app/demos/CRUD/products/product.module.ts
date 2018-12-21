@@ -19,11 +19,11 @@ const routes: Routes = [
       canActivate: [ AuthGuardService ], data: { preload: true }, component: ProductListComponent
   },
   { path: 'demos/demo-home/crud-home/products/product-detail/product-detail/:id',
-    canActivate: [ AuthGuardService, ProductDetailGuard ], component: ProductDetailComponent
+    canActivate: [ ProductDetailGuard ], component: ProductDetailComponent
   },
   {
     path: 'demos/demo-home/crud-home/products/product-edit/product-edit/:id/edit',
-    canDeactivate: [ AuthGuardService, ProductEditGuard ], component: ProductEditComponent
+    canDeactivate: [ ProductEditGuard ], component: ProductEditComponent
   }
 ];
 

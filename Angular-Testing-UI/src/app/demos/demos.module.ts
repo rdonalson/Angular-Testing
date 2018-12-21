@@ -12,6 +12,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
 import { UserModule } from './CRUD/user/user.module';
+import { AmpHomeComponent } from './AMP/amp-home.component';
+import { CrudHomeComponent } from './CRUD/crud-home.component';
 
 const routes: Routes = [
   { path: 'demos/demo-home', component: DemoHomeComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'demos/demo-home/reactive-form', component: ReactiveFormComponent },
   { path: 'demos/demo-home/reactive-formbuilder', component: ReactiveFormbuilderComponent },
   { path: 'demos/demo-home/reactive-display-validation', component: ReactiveDisplayValidationComponent },
-  { path: 'demos/demo-home/reactive-duplicate-elements', component: ReactiveDuplicateElementsComponent }
+  { path: 'demos/demo-home/reactive-duplicate-elements', component: ReactiveDuplicateElementsComponent },
+  { path: 'demos/demo-home/amp-home', component: AmpHomeComponent },
+  { path: 'demos/demo-home/crud-home', component: CrudHomeComponent }
 ];
 
 @NgModule({

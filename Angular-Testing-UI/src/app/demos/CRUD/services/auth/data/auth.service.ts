@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IUser } from '../../../user/models/user.interface';
+import { MessageService } from '../../messages/message.service';
 
 @Injectable()
 export class AuthService {
@@ -8,7 +9,7 @@ export class AuthService {
   redirectUrl: string;
 
   constructor(
-    // private messageService: MessageService
+    private messageService: MessageService
   ) { }
 
   isLoggedIn(): boolean {
@@ -17,7 +18,7 @@ export class AuthService {
 
   login(userName: string, password: string): void {
       if (!userName || !password) {
-          // this.messageService.addMessage('Please enter your userName and password');
+          this.messageService.addMessage('Please enter your userName and password');
           return;
       }
       if (userName === 'admin') {
@@ -26,7 +27,7 @@ export class AuthService {
               userName: userName,
               isAdmin: true
           };
-          // this.messageService.addMessage('Admin login');
+          this.messageService.addMessage('Admin login');
           return;
       }
       this.currentUser = {
@@ -34,7 +35,7 @@ export class AuthService {
           userName: userName,
           isAdmin: false
       };
-      // this.messageService.addMessage(`User: ${this.currentUser.userName} logged in`);
+      this.messageService.addMessage(`User: ${this.currentUser.userName} logged in`);
   }
 
   logout(): void {

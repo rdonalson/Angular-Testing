@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CrudHomeComponent } from './crud-home.component';
 import { ProductModule } from './products/product.module';
 import { ProductService } from './services/product/data/product.service';
+import { MessageService } from './services/messages/message.service';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ProductService } from './services/product/data/product.service';
     CrudHomeComponent
   ],
   providers: [
-    ProductService
+    ProductService,
+    MessageService
   ],
 
 })
