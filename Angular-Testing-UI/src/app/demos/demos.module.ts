@@ -11,9 +11,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
-import { UserModule } from './CRUD/user/user.module';
 import { AmpHomeComponent } from './AMP/amp-home.component';
 import { CrudHomeComponent } from './CRUD/crud-home.component';
+import { PageNotFoundComponent } from '../system/pages/page-not-found.component';
 
 const routes: Routes = [
   { path: 'demos/demo-home', component: DemoHomeComponent },
@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'demos/demo-home/reactive-display-validation', component: ReactiveDisplayValidationComponent },
   { path: 'demos/demo-home/reactive-duplicate-elements', component: ReactiveDuplicateElementsComponent },
   { path: 'demos/demo-home/amp-home', component: AmpHomeComponent },
-  { path: 'demos/demo-home/crud-home', component: CrudHomeComponent }
+  { path: 'demos/demo-home/crud-home', component: CrudHomeComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -33,8 +34,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     AmpModule,
-    CrudModule,
-    UserModule
+    CrudModule
   ],
   declarations: [
     TemplateFormComponent,

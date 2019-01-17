@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'demos/demo-home/crud-home/products/product-edit/product-edit/:id/edit',
-    canActivate: [ AuthGuardService, ProductDetailGuard ], component: ProductEditComponent
+    canActivate: [ AuthGuardService ], component: ProductEditComponent
   },
   {
     path: 'demos/demo-home/crud-home/products/product-edit/product-edit/:id/edit',
