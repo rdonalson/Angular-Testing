@@ -13,11 +13,11 @@ import { PageNotFoundComponent } from './system/pages/page-not-found.component';
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule,
     UtilitiesModule,
     DemosModule,
     UtilitiesTestingModule,
-    GeneralTestingModule
+    GeneralTestingModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,

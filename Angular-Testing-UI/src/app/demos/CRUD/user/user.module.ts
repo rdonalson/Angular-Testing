@@ -12,7 +12,7 @@ import { SharedModule } from '../../AMP/shared/shared.module';
     CommonModule,
     SharedModule,
     RouterModule.forChild([
-      // { path: 'demos/demo-home/crud-home/login', component: LoginComponent }
+    //   { path: 'demos/demo-home/crud-home/login', component: LoginComponent }
     ])
   ],
   declarations: [

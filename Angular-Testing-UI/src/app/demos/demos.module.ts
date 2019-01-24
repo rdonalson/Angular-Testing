@@ -13,7 +13,6 @@ import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
 import { AmpHomeComponent } from './AMP/amp-home.component';
 import { CrudHomeComponent } from './CRUD/crud-home.component';
-import { PageNotFoundComponent } from '../system/pages/page-not-found.component';
 
 const routes: Routes = [
   { path: 'demos/demo-home', component: DemoHomeComponent },
@@ -23,8 +22,7 @@ const routes: Routes = [
   { path: 'demos/demo-home/reactive-display-validation', component: ReactiveDisplayValidationComponent },
   { path: 'demos/demo-home/reactive-duplicate-elements', component: ReactiveDuplicateElementsComponent },
   { path: 'demos/demo-home/amp-home', component: AmpHomeComponent },
-  { path: 'demos/demo-home/crud-home', component: CrudHomeComponent },
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'demos/demo-home/crud-home', component: CrudHomeComponent }
 ];
 
 @NgModule({

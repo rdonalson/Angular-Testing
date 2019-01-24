@@ -23,7 +23,6 @@ const routes: Routes = [
   { path: 'styling/css-home/animations', component: AnimationsComponent },
   { path: 'testing/bookmark-testing', component: BookmarkTestingComponent },
   { path: 'testing/date-round-down', component: DateRoundDownComponent }
-
 ];
 
 @NgModule({
