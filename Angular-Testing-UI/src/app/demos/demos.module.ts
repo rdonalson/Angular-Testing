@@ -11,6 +11,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
 import { DemosRoutingModule } from './demos-routing.module';
+import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { DemosRoutingModule } from './demos-routing.module';
     DemoHomeComponent,
     ReactiveFormbuilderComponent,
     ReactiveDisplayValidationComponent,
-    ReactiveDuplicateElementsComponent
+    ReactiveDuplicateElementsComponent,
+    RxjsHomeComponent
   ]
 })
 export class DemosModule { }
