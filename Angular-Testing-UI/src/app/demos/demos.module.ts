@@ -12,6 +12,7 @@ import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
 import { DemosRoutingModule } from './demos-routing.module';
 import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
+import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
     ReactiveFormbuilderComponent,
     ReactiveDisplayValidationComponent,
     ReactiveDuplicateElementsComponent,
-    RxjsHomeComponent
+    RxjsHomeComponent,
+    RxjsAjaxComponent
   ]
 })
 export class DemosModule { }

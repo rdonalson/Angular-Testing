@@ -10,11 +10,13 @@ import { ReactiveDuplicateElementsComponent } from './reactive-duplicate-element
 import { AmpHomeComponent } from './AMP/amp-home.component';
 import { CrudHomeComponent } from './CRUD/crud-home.component';
 import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
+import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
 
 const routes: Routes = [
   { path: 'demos/demo-home', component: DemoHomeComponent },
   { path: 'demos/demo-home/template-form', component: TemplateFormComponent },
   { path: 'demos/demo-home/rxjs-home', component: RxjsHomeComponent },
+  { path: 'demos/demo-home/rxjs-home/rxjs-ajax', component: RxjsAjaxComponent },
   { path: 'demos/demo-home/reactive-form', component: ReactiveFormComponent },
   { path: 'demos/demo-home/reactive-formbuilder', component: ReactiveFormbuilderComponent },
   { path: 'demos/demo-home/reactive-display-validation', component: ReactiveDisplayValidationComponent },
