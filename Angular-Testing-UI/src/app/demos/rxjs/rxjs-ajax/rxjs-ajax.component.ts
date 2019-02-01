@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Book } from '../api/model/book';
-import { Observable } from 'rxjs/Observable';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { ajaxGet } from 'rxjs/observable/dom/AjaxObservable';
+import { IProduct } from '../../CRUD/products/models/product.interface';
+import { allReaders } from '../api/data/data';
 
 @Component({
   selector: 'app-rxjs-ajax',
@@ -15,27 +15,26 @@ export class RxjsAjaxComponent implements OnInit {
 
   @ViewChild('readersButton') readersButton: ElementRef;
   @ViewChild('readers') readers: ElementRef;
+  @ViewChild('productsButton') productsButton: ElementRef;
+  @ViewChild('products') products: ElementRef;
 
   constructor() {
-    this.pageTitle = 'RxBookTracker';
+    this.pageTitle = 'RxJs Ajax';
   }
   private _productUrl = 'http://localhost:50000/api/products';
+
   ngOnInit() {
-    console.log('Click Event => ');
-    fromEvent(this.readersButton.nativeElement, 'click')
+    console.log('Ajax Products Click Event => ');
+    fromEvent(this.productsButton.nativeElement, 'click')
       .subscribe(event => {
         ajaxGet(this._productUrl)
           .subscribe(result => {
             console.log(result);
+            const products = this.products.nativeElement;
+            result.response.forEach((element: IProduct) => {
+              products.innerHTML += element.description + '<br>';
+            });
           });
-        // console.log(event);
-        // const readers = this.readers.nativeElement;
-        // for (const reader of allReaders) {
-        //   readers.innerHTML += reader.name + '<br>';
-        //   console.log(reader);
-        // }
       });
   }
-
-
 }
