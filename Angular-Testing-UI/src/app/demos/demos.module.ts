@@ -13,6 +13,7 @@ import { CrudModule } from './CRUD/crud.module';
 import { DemosRoutingModule } from './demos-routing.module';
 import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
 import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
+import { RxjsObservablesComponent } from './rxjs/rxjs-observables/rxjs-observables.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
     ReactiveDisplayValidationComponent,
     ReactiveDuplicateElementsComponent,
     RxjsHomeComponent,
-    RxjsAjaxComponent
+    RxjsAjaxComponent,
+    RxjsObservablesComponent
   ]
 })
 export class DemosModule { }
