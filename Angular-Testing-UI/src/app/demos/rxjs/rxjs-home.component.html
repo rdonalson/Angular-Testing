@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">
+    <h5>{{ pageTitle }}</h5>
+    <nav>
+      <ul>
+        <li>
+          <a href="" [routerLink]="['../']">Demo Home</a>
+        </li>
+        <li>
+          <a href="" [routerLink]="['./rxjs-ajax']">RxJs-Ajax</a>
+        </li>
+        <li>
+          <a href="" [routerLink]="['./rxjs-observables']">RxJs-observables</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="card-body">
+    <div>
+      <button id="readersButton" #readersButton >Display Readers</button>
+    </div>
+    <div id="readers" #readers ></div>
+  </div>
+</div>

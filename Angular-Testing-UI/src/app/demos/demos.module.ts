@@ -11,6 +11,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AmpModule } from './AMP/amp.module';
 import { CrudModule } from './CRUD/crud.module';
 import { DemosRoutingModule } from './demos-routing.module';
+import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
+import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
+import { RxjsObservablesComponent } from './rxjs/rxjs-observables/rxjs-observables.component';
 
 @NgModule({
   imports: [
@@ -27,7 +30,10 @@ import { DemosRoutingModule } from './demos-routing.module';
     DemoHomeComponent,
     ReactiveFormbuilderComponent,
     ReactiveDisplayValidationComponent,
-    ReactiveDuplicateElementsComponent
+    ReactiveDuplicateElementsComponent,
+    RxjsHomeComponent,
+    RxjsAjaxComponent,
+    RxjsObservablesComponent
   ]
 })
 export class DemosModule { }

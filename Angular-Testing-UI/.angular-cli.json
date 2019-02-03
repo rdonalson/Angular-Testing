@@ -11,6 +11,7 @@
         "assets",
         "app/demos/AMP/api",
         "app/demos/CRUD/api",
+        "/src/app/demos/rxjs/api",
         "http://localhost:50000/api"
       ],
       "index": "index.html",
