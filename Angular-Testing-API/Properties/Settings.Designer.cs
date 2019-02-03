@@ -26,11 +26,22 @@ namespace Angular_Testing.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VPBJU0V\\APPLICATION;Initial Catalog=Angular-Testing;Integrate" +
-            "d Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LT-RDonalson;Initial Catalog=Angular-Testing;Integrated Security=True" +
+            "")]
         public string conn {
             get {
                 return ((string)(this["conn"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VPBJU0V\\APPLICATION;Initial Catalog=Angular-Testing;Integrate" +
+            "d Security=True")]
+        public string Home {
+            get {
+                return ((string)(this["Home"]));
             }
         }
     }
