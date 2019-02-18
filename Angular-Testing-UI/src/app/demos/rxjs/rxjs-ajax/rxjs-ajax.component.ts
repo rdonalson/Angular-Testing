@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { ajaxGet } from 'rxjs/observable/dom/AjaxObservable';
 import { IProduct } from '../../CRUD/products/models/product.interface';
-import { allReaders } from '../api/data/data';
 
 @Component({
   selector: 'app-rxjs-ajax',

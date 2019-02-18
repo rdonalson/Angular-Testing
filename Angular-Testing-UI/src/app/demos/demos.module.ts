@@ -14,6 +14,7 @@ import { DemosRoutingModule } from './demos-routing.module';
 import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
 import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
 import { RxjsObservablesComponent } from './rxjs/rxjs-observables/rxjs-observables.component';
+import { RxjsSubscriptionsComponent } from './rxjs/rxjs-subscriptions/rxjs-subscriptions.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { RxjsObservablesComponent } from './rxjs/rxjs-observables/rxjs-observabl
     ReactiveDuplicateElementsComponent,
     RxjsHomeComponent,
     RxjsAjaxComponent,
-    RxjsObservablesComponent
+    RxjsObservablesComponent,
+    RxjsSubscriptionsComponent
   ]
 })
 export class DemosModule { }

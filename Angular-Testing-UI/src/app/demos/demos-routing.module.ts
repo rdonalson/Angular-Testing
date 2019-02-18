@@ -13,6 +13,7 @@ import { CrudHomeComponent } from './CRUD/crud-home.component';
 import { RxjsHomeComponent } from './rxjs/rxjs-home.component';
 import { RxjsAjaxComponent } from './rxjs/rxjs-ajax/rxjs-ajax.component';
 import { RxjsObservablesComponent } from './rxjs/rxjs-observables/rxjs-observables.component';
+import { RxjsSubscriptionsComponent } from './rxjs/rxjs-subscriptions/rxjs-subscriptions.component';
 
 const routes: Routes = [
   { path: 'demos/demo-home', component: DemoHomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'demos/demo-home/rxjs-home', component: RxjsHomeComponent },
   { path: 'demos/demo-home/rxjs-home/rxjs-ajax', component: RxjsAjaxComponent },
   { path: 'demos/demo-home/rxjs-home/rxjs-observables', component: RxjsObservablesComponent },
+  { path: 'demos/demo-home/rxjs-home/rxjs-subscriptions', component: RxjsSubscriptionsComponent },
   { path: 'demos/demo-home/reactive-form', component: ReactiveFormComponent },
   { path: 'demos/demo-home/reactive-formbuilder', component: ReactiveFormbuilderComponent },
   { path: 'demos/demo-home/reactive-display-validation', component: ReactiveDisplayValidationComponent },
