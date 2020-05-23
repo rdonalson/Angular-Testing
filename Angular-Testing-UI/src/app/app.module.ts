@@ -1,29 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { UtilitiesModule } from './utilities/utilities.module';
-import { DemosModule } from './demos/demos.module';
-import { UtilitiesTestingModule } from './common/utilities-testing.module';
-import { GeneralTestingModule } from './testing/general-testing.module';
-import { PageNotFoundComponent } from './system/pages/page-not-found.component';
+import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
+  declarations: [
+    AppComponent
+  ],
   imports: [
     BrowserModule,
-    UtilitiesModule,
-    DemosModule,
-    UtilitiesTestingModule,
-    GeneralTestingModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // FormsModule,
+    // ReactiveFormsModule,
+    CoreModule,
+    SharedModule
   ],
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PageNotFoundComponent
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

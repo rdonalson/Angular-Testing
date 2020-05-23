@@ -1,25 +1,40 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './core/auth/login/login.component';
+import { RegisterComponent } from './core/auth/register/register.component';
+import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './system/pages/page-not-found.component';
-
-
-const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent }
+export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
+    path: 'app/core/auth/login',
+    component: LoginComponent,
+    data: {
+      title: 'Login Page'
+    }
+  },
+  {
+    path: 'Dasboard',
+    component: AppComponent,
+    data: {
+      title: 'Dashboard Page'
+    }
+  },
+  {
+    path: 'app/core/auth/register',
+    component: RegisterComponent,
+    data: {
+      title: 'Add User Page'
+    }
+  },
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ],
-  declarations: [  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
