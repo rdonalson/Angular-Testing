@@ -6,7 +6,6 @@ import { of } from 'rxjs/observable/of';
 import { from } from 'rxjs/observable/from';
 import { concat } from 'rxjs/observable/concat';
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import { ajaxGet } from 'rxjs/observable/dom/AjaxObservable';
 
 @Component({
   selector: 'app-rxjs-home',
