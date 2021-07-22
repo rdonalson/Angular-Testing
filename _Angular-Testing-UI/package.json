@@ -29,7 +29,7 @@
     "ngx-bootstrap": "^2.0.0-beta.2",
     "popper.js": "^1.14.3",
     "primeng": "^5.2.6",
-    "xlsx": "^0.14.0",
+    "xlsx": "^0.17.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
